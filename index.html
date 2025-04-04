@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWAJIN</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/st.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css" />
+    <!-- 파비콘 -->
+    <link rel="icon" type="image/png" sizes="28x28" href="./images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <h1 class="logo"><a href="./hwajin.html"><img src="./images/logo.svg" alt="logo"></a></h1>
+            <ul class="gnb">
+                <li><a href="./index.html#section1_wrap">구매 리워드</a></li>
+                <li><a href="./index.html#section2">기획세트 특별할인</a></li>
+                <li><a href="./index.html#section3_wrap">스페셜 패키지</a></li>
+                <li><a href="./index.html#section4">리뷰 리워드</a></li>
+            </ul>
+            <ul class="service">
+                <li><a href="#"><img src="./images/search.png" alt="Service"></a></li>
+                <li><a href="#"><img src="./images/shopping_cart.png" alt="Service"></a></li>
+                <li><a href="#"><img src="./images/menu.png" alt="Service"></a></li>
+            </ul>
+        </div>
+        <div id="main_banner">
+            <img src="./images/main.png" alt="main">
+        </div>
+        <div id="section1_wrap">
+            <div class="section1">
+                <img src="./images/sec1.png" alt="sec1">
+                <img src="./images/con1.png" alt="con1">
+            </div>
+        </div>
+        <div id="section2">
+            <img src="./images/sec2.png" alt="sec2">
+            <div class="content2">
+                <div class="content2_img"><img src="./images/con2_1.png" alt="con2"></div>
+                <div class="content2_text">
+                    <img src="./images/con2_1_1.png" alt="con2">
+                </div>
+            </div>
+            <div class="content2">
+                <div class="content2_text">
+                    <img src="./images/con2_2_1.png" alt="con2">
+                </div>
+                <div class="content2_img"><img src="./images/con2_2.png" alt="con2"></div>
+            </div>
+            <div class="content2">
+                <div class="content2_img"><img src="./images/con2_3.png" alt="con2"></div>
+                <div class="content2_text">
+                    <img src="./images/con2_3_1.png" alt="con2">
+                </div>
+            </div>
+        </div>
+        <div id="section3_wrap">
+            <div class="section3">
+                <img src="./images/sec3.png" alt="sec3">
+                <div class="content3">
+                    <img src="./images/con3_1.png" alt="con1">
+                    <img src="./images/con3_2.png" alt="con1">
+                    <img src="./images/con3_3.png" alt="con1">
+                    <img src="./images/con3_4.png" alt="con1">
+                </div>
+            </div>
+        </div>
+
+        <div id="section4">
+            <img src="./images/sec4.png" alt="sec4">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./images/con4_1.png" alt="con4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/con4_2.png" alt="con4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/con4_3.png" alt="con4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/con4_4.png" alt="con4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/con4_5.png" alt="con4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./images/con4_6.png" alt="con4">
+                    </div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="content_b">
+                <img src="./images/con4_b1.png" alt="con4_b">
+                <img src="./images/con4_b2.png" alt="con4_b">
+            </div>
+        </div>
+        <div id="footer_wrap">
+            <div class="footer">
+                <img src="./images/footer.png" alt="footer">
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 5,
+            spaceBetween: 5,
+            centeredSlides: false,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    spaceBetween: 10,
+                },
+                768: {
+                    spaceBetween: 20,
+                },
+                1024: {
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
